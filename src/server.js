@@ -23,6 +23,10 @@ app.use(express.json())
 app.use(config.cors())
 app.use(config.helmet())
 
+app.use('/aos', express.static(path.resolve(__dirname, '../node_modules/aos/dist/')))
+app.use('/animate', express.static(path.resolve(__dirname, '../node_modules/animate.css/')))
+app.use(express.static(path.resolve(__dirname, '../client/public')))
+
 app.use('/', indexRouter)
 
 server.listen(config.PORT, function launchServer() {
