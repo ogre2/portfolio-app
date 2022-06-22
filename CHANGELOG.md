@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2022-06-22
+
+### Added
+
+- `<client>` subdirectory to house frontend code.
+- Created views and layouts folders to house EJS pages.
+- Created index view file.
+- Configured EJS as our frontend view engine in the server file.
+- Routed app to layout file location.
+
+### Changes
+
+- Modified index router to render index view.
+
 ## [0.0.7] - 2022-06-22
 
 ### Added
@@ -84,7 +98,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added [img.shields.io](img.shields.io) to README.
 - Added contributors and contact sections to README.
 
-[Unreleased]: https://github.com/ogre2/portfolio-app/compare/v0.0.7...HEAD
+[Unreleased]: https://github.com/ogre2/portfolio-app/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/ogre2/portfolio-app/releases/tag/v1.0.0
 [0.0.7]: https://github.com/ogre2/portfolio-app/releases/tag/v0.0.7
 [0.0.6]: https://github.com/ogre2/portfolio-app/releases/tag/v0.0.6
 [0.0.5]: https://github.com/ogre2/portfolio-app/releases/tag/v0.0.5
