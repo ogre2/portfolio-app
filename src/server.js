@@ -1,7 +1,19 @@
 const express = require('express')
 const http = require('http')
+const { ppid } = require('process')
+const config = require('./config')
 const app = express()
 const server = http.createServer(app)
+
+config.colors.enable()
+
+app.set('case sensitive routing', true)
+app.set('json spaces', 2)
+
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
+app.use(config.cors())
+app.use(config.helmet())
 
 app.get('/', (req, res) => {
     // TODO Get index
@@ -10,6 +22,6 @@ app.get('/', (req, res) => {
     })
 })
 
-server.listen(5000, function launchServer() {
-    console.log(`[nodemon] server is running on port:${5000}`)
+server.listen(config.PORT, function launchServer() {
+    console.log(`[nodemon] server is running on port:${config.PORT}`.green)
 })
