@@ -6,9 +6,9 @@ config.colors.enable()
 router.get('/', (req, res) => {
     // TODO GET index
     try {
-        res.status(200).json({
-            success: true,
-            message: 'Index route'
+        res.status(200).render('index', {
+            title: 'Home',
+            message: 'Hello World!'
         })
     }
     catch(error) {
