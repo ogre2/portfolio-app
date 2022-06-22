@@ -4,6 +4,9 @@ const config = require('./config')
 const app = express()
 const server = http.createServer(app)
 
+// Application route files
+const indexRouter = require('./routes/index')
+
 config.colors.enable()
 
 app.set('case sensitive routing', true)
@@ -14,12 +17,7 @@ app.use(express.json())
 app.use(config.cors())
 app.use(config.helmet())
 
-app.get('/', (req, res) => {
-    // TODO Get index
-    res.status(200).json({
-        message: 'Hello World!'
-    })
-})
+app.use('/', indexRouter)
 
 server.listen(config.PORT, function launchServer() {
     console.log(`[nodemon] server is running on port:${config.PORT}`.green)
