@@ -4,7 +4,7 @@
   "description": "![node version](https://img.shields.io/static/v1?label=node&message=v16.15.0&color=success)\r ![npm version](https://img.shields.io/static/v1?label=npm&message=v8.8.0&color=critical)\r ![license](https://img.shields.io/static/v1?label=license&message=Apache%202.0&color=informational)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./src/server.js"
   },
   "repository": {
     "type": "git",
