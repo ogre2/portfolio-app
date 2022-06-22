@@ -5,9 +5,29 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="I design and build modern web applications.">
+
+        <!-- Facebook -->
+        <meta property="og:title" content="Stephen Mwingira – Software Engineer" />
+        <meta property="og:description" content="Experienced engineer designing and building modern web applications." />
+        <meta property="og:site_name" content="Stephen Mwingira" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://stephenwm.me/" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="/css/styles.css" />
+        <link rel="stylesheet" href="/animate/animate.min.css" />
 
         <!-- Title -->
         <title>Steve &mdash; <%= title %></title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" type="image/x-icon" />
+        <link rel="icon" href="android-chrome-192x192.png" type="image/x-icon" />
     </head>
 
     <body id="page-top" data-spy="scroll">
@@ -16,5 +36,8 @@
             <%- body %>
         </div>
         <!-- .app-wrapper -->
+
+        <!-- AOS -->
+        <script src="/aos/aos.js"></script>
     </body>
 </html>
