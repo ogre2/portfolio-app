@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Linked Apple and Android version of favicons to layout file.
 - Linked main stylesheet to layout file.
 - Linked animate.css and AOS to layout file.
+- Merged client branch to main branch.
 
 ## [1.0.0] - 2022-06-22
 
