@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2022-06-22
+
+### Added
+
+- Created public file for frontend assets (images, styles, etc).
+- Added app favicon variations to public file.
+- Installed animate.css and aos for scroll reveal animations.
+- Created scss file for Sass styling.
+- Created css file for compiled Sass files.
+- Started main stylesheet.
+
+## Changes
+
+- Linked main app favicon to app layout file.
+- Linked Apple and Android version of favicons to layout file.
+- Linked main stylesheet to layout file.
+- Linked animate.css and AOS to layout file.
+
 ## [1.0.0] - 2022-06-22
 
 ### Added
@@ -98,7 +116,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added [img.shields.io](img.shields.io) to README.
 - Added contributors and contact sections to README.
 
-[Unreleased]: https://github.com/ogre2/portfolio-app/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/ogre2/portfolio-app/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/ogre2/portfolio-app/releases/tag/v1.0.1
 [1.0.0]: https://github.com/ogre2/portfolio-app/releases/tag/v1.0.0
 [0.0.7]: https://github.com/ogre2/portfolio-app/releases/tag/v0.0.7
 [0.0.6]: https://github.com/ogre2/portfolio-app/releases/tag/v0.0.6
