@@ -1,6 +1,5 @@
 const express = require('express')
 const http = require('http')
-const { ppid } = require('process')
 const config = require('./config')
 const app = express()
 const server = http.createServer(app)
